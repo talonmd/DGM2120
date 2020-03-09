@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <title>Coops n Sheds - Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Coops n Sheds Co.</h1>
+        <h2>We build everything from coops to sheds</h2>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="egginfo.html">Egg Information</a></li>
+            <li><a href="breeds.html">Common Breeds</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="stay-open"></div>
+    </nav>
+
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <form action="thanks.html" method="post" enctype="multipart/form-data" name="contact" class="contact-form">
+
+            <fieldset>
+                <legend>Return Contact Information</legend>
+                <label><span>Name:</span><input class="userinfo" type="text" name="name" placeholder="First Last"
+                        required></label>
+                <label><span>Email:</span><input class="userinfo" type="email" name="email"
+                        placeholder="example@gmail.com" required></label>
+                <label><span>Phone Number:</span><input class="userinfo" type="tel" name="phone"
+                        placeholder="123-456-789" pattern="[0-9-. ]{10, 14}"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <label><span>Today's Date:</span> <input class="date" type="date" name="date"></label>
+                <label class="textarea-label">Comments, Critisisms, Complements, and Questions:</label>
+                <textarea class="textarea" name="message" rows="10" cols="80" required>Type your message here</textarea>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Optional Newsletter Subscription</legend>
+
+                <span class="radio-checkbox">Would you like to sign up for our newsletter?</span>
+                <label><input type="radio" name="yes-no" value="windows">Yes, sign me up!</label><br>
+                <label><input type="radio" name="yes-no" value="mac">No, not right now.</label>
+
+                <label><span class="radio-checkbox">Which medium would you prefer to recieve the newsletter through?</span></label>
+                <select class="userinfo" name="medium-preference">
+                    <option value="email">Email</option>
+                    <option value="letter">Post</option>
+                    <option value="both">Both</option>
+                </select>
+
+                <span class="radio-checkbox">For more relevant and personalized content, mark your interests:</span>
+                <label><input type="checkbox" name="coops" value="coops">Coops</label><br>
+                <label><input type="checkbox" name="raising-chickens" value="raising-chickens">Raising
+                    Chickens</label><br>
+                <label><input type="checkbox" name="sheds" value="sheds">Sheds</label><br>
+                <label><input type="checkbox" name="other" value="other">Other: </label><label><input class="other-text-box"
+                        type="text" name="other" value=""></label>
+
+            </fieldset>
+
+            <input class="submit-button" type="submit" name="submit" value="submit my message">
+
+        </form>
+
+        <div class="stay-open"></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2019 &bull; Coops n Sheds Co. &bull; built by Talon Durrant &bull; 10-6-19</p>
+    </footer>
+
+</body>
+
+</html>

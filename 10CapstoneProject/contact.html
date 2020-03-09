@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Daisy Days Vacations - Contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Daisy Days Vacations</h1>
+            <!--<h2>stop and smell the daisies</h2>-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">
+                            Home
+                        </a></li>
+                    <li><a href="destinations.html">
+                            Destinations
+                        </a></li>
+                    <li><a href="video.html">
+                            Video Information
+                        </a></li>
+                    <li><a href="packages.html">
+                            Vacation Packages
+                        </a></li>
+                    <li><a href="contact.html" class="active">
+                            Contact Us
+                        </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Contact Us</h1>
+            <h2>We would love to hear from you!</h2>
+            <p class="padded-bottom">Looking to plan your next and best vacation? Fill out this quick form with what you are thinking, and we
+                will get back to you as soon as you can say the word 'vacation.'</p>
+
+            <form action="thanks.html" method="post" enctype="multipart/form-data" name="contact-us">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label><span>Name:</span><input class="userinfo" type="text" name="name" placeholder="First Last"
+                            required></label>
+                    <label><span>Email:</span><input class="userinfo" type="email" name="email"
+                            placeholder="example@gmail.com" required></label>
+                    <label><span>Phone Number:</span><input class="userinfo" type="tel" name="phone"
+                            placeholder="123-456-789" pattern="[0-9-. ]{10, 14}"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vacation Preferences</legend>
+
+                    <span>Where are you interested in going?</span>
+                    <label><input type="checkbox" name="united-states" value="united-states">United States</label><br>
+                    <label><input type="checkbox" name="canada" value="canada">Canada</label><br>
+                    <label><input type="checkbox" name="mexico" value="mexico">Mexico</label><br>
+                    <label><input type="checkbox" name="overseas" value="overseas">Other</label><br>
+
+                    <span>What is your prefered method of travel?</span>
+                    <label><input type="radio" name="travel-method" value="drive">I like driving.</label><br>
+                    <label><input type="radio" name="travel-method" value="flight">I would prefer to fly.</label><br>
+                    <label><input type="radio" name="travel-method" value="other">I am unsure.</label>
+
+                    <span>What is your prefered method of contact?</span>
+                    <select class="userinfo" name="contact-preference">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone Call</option>
+                        <option value="text">Text</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Anything else?</legend>
+                    <textarea class="textarea" name="message" rows="10" cols="80"
+                        required>Type your message here</textarea>
+                </fieldset>
+
+                <input class="submit-button" type="submit" name="submit" value="submit my message">
+
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2019 &bull; Daisy Days Vacations &bull; created by Talon Durrant</p>
+        </footer>
+    </div>
+</body>
+
+</html>

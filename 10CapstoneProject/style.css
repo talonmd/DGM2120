@@ -1,0 +1,340 @@
+/* ----- CSS RESET ----- */
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/* ----- BOX MODEL FIX ----- */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ----- BODY & CONTAINER SIZING ----- */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 5px rgb(88, 88, 88);
+}
+
+body {
+    background-image: linear-gradient(rgb(193, 197, 201), rgb(168, 170, 172));
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----- HEADER ----- */
+
+header {
+    background-image: url(images/daisy-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    height: 250px;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 4rem;
+    padding: 1rem 0 0 1rem;
+    text-shadow: 0 0 25px rgb(53, 53, 53);
+}
+
+/* ----- NAVIGATION ----- */
+
+/* ----- NAVIGATION FOR THE TABLET AND DESKTOP ----- */
+
+@media only screen and (min-width: 751px) {
+    nav {
+        margin-top: 4.3rem;
+        background-color: rgba(223, 189, 18, 0.521);
+    }
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 1rem 1rem 1rem 1rem;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        letter-spacing: .5px;
+        border-right: 1px solid rgba(255, 255, 255, 0.185);
+    }
+    nav ul li a:hover {
+        background-color: rgba(223, 189, 18, 0.829);
+    }
+    nav ul li a.active {
+        background-color: rgb(223, 189, 18, 0.829)
+    }
+}
+
+/* ----- END OF TABLET AND DESKTOP NAVIGATION ----- */
+
+/* ----- MOBILE NAVIGATION ----- */
+
+@media only screen and (max-width: 750px) {
+    header {
+        height: 369px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    nav {
+        background-color: rgba(223, 189, 18, 0.521);
+    }
+    nav ul {
+        list-style-type: none;
+        margin: .5rem 0 0 0;
+        padding: 0;
+    }
+    nav ul li a {
+        text-align: center;
+        padding: 1rem 1rem;
+        color: white;
+        text-decoration: none;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.671);
+    }
+    nav ul li a.active {
+        background-color: rgba(223, 189, 18, 0.644);
+    }
+    nav ul li a:hover {
+        background-color: rgba(223, 189, 18, 0.829);
+    }
+    /* ----- RESIZING TEXTAREA -----*/
+    form textarea {
+        width: 100%;
+    }
+    /* ----- RESIZING DESTINATIONS DIVS ----- */
+    figure.destinations-figure {
+        float: none;
+        width: 100%;
+    }
+    /* ----- VACATION PACKAGES RESIZING ----- */
+    div.vacation-packages {
+        flex-direction: column;
+    }
+
+}
+
+/* ----- ADJUSTING THE HEADER AT A SMALLER SCREEN SIZE ----- */
+
+@media only screen and (max-width: 414px) {
+    header {
+        height: 453px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* ----- END OF MOBILE NAVIGATION ----- */
+
+/* ----- MAIN AREA ----- */
+
+main {
+    background-color: rgb(235, 231, 231);
+    padding: 1rem;
+}
+
+main h1 {
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+h2 {
+    padding: 1rem 0 .2rem 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+p.padded-bottom {
+    padding-bottom: 1rem;
+}
+
+/* ----- IMAGES AND MEDIA ----- */
+
+figure.right-figure {
+    max-width: 35%;
+    float: right;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgb(167, 167, 167);
+}
+
+img.right-image {
+    width: 100%;
+    padding: 2px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0 6px 4px 6px;
+}
+
+div.destinations-div {
+    display: block;
+    width: 100%;
+}
+
+figure.destinations-figure {
+    width: 48%;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgb(167, 167, 167);
+    margin: .5rem;
+    padding: 0;
+    float: left;
+    height: 375px;
+}
+
+img.destinations-image {
+    width: 100%;
+    max-height: 250px;
+    padding: 2px;
+}
+
+.video {
+    width: 50%;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+
+/* ----- BLOCKQUOTES ----- */
+
+blockquote.testimonial {
+    box-shadow: 0 0 5px 1px rgb(167, 167, 167);
+    border-radius: 5px;
+    background-color: rgba(223, 189, 18, 0.068);
+    padding: .5rem 1rem;
+}
+
+/* ----- FORM STYLING ----- */
+
+form fieldset {
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+form legend {
+    font-weight: bold;
+}
+
+form span {
+    display: block;
+    padding: .8rem 0 .1rem .2rem;
+}
+
+form input, form select {
+    margin-left: 1rem;
+}
+
+form .userinfo {
+    width: 25rem;
+    border-radius: 4px;
+    border: 1px solid rgb(119, 119, 119);
+    padding: .4rem .4rem .4rem .2rem;
+    margin-left: .2rem;
+    background-color: rgba(173, 124, 64, .05);
+}
+
+form textarea {
+    border-radius: 4px;
+    border: 1px solid rgb(119, 119, 119);
+    background-color: rgba(173, 124, 64, .05);
+    padding-left: .2rem;
+    margin-top: .9rem;
+}
+
+form .submit-button {
+    width: 20rem;
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: rgba(223, 189, 18);
+    color: #F2F2F2;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+form .submit-button:hover {
+    background-color: rgb(199, 169, 19);
+}
+
+/* ----- VACATION PACKAGES STYLING ----- */
+
+div.vacation-packages {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px 2px rgb(167, 167, 167);
+    padding: .25rem 1rem .25rem .25rem;
+    margin-top: 2rem;
+    color: black;
+    display: flex;
+}
+
+figure.packages-figure {
+    margin: 0 1rem 0 0;
+    width: 100%;
+}
+
+img.packages-image {
+    height: 100%;
+    padding: 2px;
+    width: 100%;
+}
+
+div.packages-information a {
+    text-decoration: none;
+    color: rgb(51, 68, 90);
+    font-weight: bold;
+}
+
+div.packages-information a:hover {
+    color: rgba(223, 189, 18);
+}
+
+h1.packages-h1 {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+h2.packages-h2 {
+    font-size: 1.2rem;
+}
+
+p.price-p {
+    bottom: 3rem;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    background-color: #3F546F;
+    padding: 1rem;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+/* ----- OTHER ----- */
+
+div.keep-clear {
+    clear: both;
+}
